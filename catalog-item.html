@@ -8,7 +8,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg">
+        <img src="img/logo-small.svg">
       </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -37,12 +37,12 @@
     <section class="products-photos">
       <h2 class="visually-hidden">Изображения товара</h2>
       <p class="product-photo-full">
-        <img src="img/product-1/product-big.jpg" alt="Фото всего набора" width="460" height="498">
+        <img src="img/product-big.jpg" alt="Фото всего набора" width="460" height="498">
       </p>
       <ul class="product-photo-preview">
-        <li><img src="img/product-1/product-small-1.jpg" alt="Фото в анфас" width="140" height="149"></li>
-        <li><img src="img/product-1/product-small-2.jpg" alt="Фото в профиль" width="140" height="149"></li>
-        <li><img src="img/product-1/product-small-3.jpg" alt="Фото отдельной части" width="140" height="149"></li>
+        <li><img src="img/product-1.jpg" alt="Фото в анфас" width="140" height="149"></li>
+        <li><img src="img/product-2.jpg" alt="Фото в профиль" width="140" height="149"></li>
+        <li><img src="img/product-3.jpg" alt="Фото отдельной части" width="140" height="149"></li>
       </ul>
     </section>
 
@@ -94,10 +94,26 @@
   </footer>
 
   <section class="modal modal-login">
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
-  </section>
+  <h2>Личный кабинет</h2>
+  <p>Введите свой логин и пароль.</p>
+  <form class="login-form" action="https://htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="user-login">Логин</label>
+      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p class="login-password-info">
+      <label class="login-checkbox">Запомните меня
+        <input type="checkbox" name="remember">
+      </label>
+      <a class="restore" href="#">Я забыл пароль!</a>
+    </p>
+    <button class="button" type="submit">Войти</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
 </body>
 </html>
